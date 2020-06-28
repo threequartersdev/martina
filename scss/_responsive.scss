@@ -1,0 +1,174 @@
+@media screen and (max-width: 1024px) {
+  .showcase {
+    .showcase-content {
+      h1 {
+        font-size: 4rem;
+        padding: 0 1rem;
+      }
+      p {
+        font-size: 2rem;
+        padding: 0 1rem;
+      }
+    }
+  }
+
+  #marquee {
+    padding-top: 2rem;
+
+    .flex-container {
+      .row-2 {
+        .column-4 {
+          .text-h3 {
+            font-size: 3.4rem;
+            padding: 0 3rem;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  #video-row {
+    padding-top: 3rem;
+    .flex-container {
+      .row-3 {
+        .column-7 {
+          p {
+            font-size: 2rem;
+            padding: 0 2rem;
+          }
+
+          .text-h3-video {
+            padding: 1rem 2rem 0;
+            font-size: 4rem;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .wrapper {
+    .cursor-hover {
+      display: none;
+    }
+  }
+  .showcase {
+    .showcase-content {
+      h1 {
+        font-size: 1.7rem;
+        padding: 0 1rem;
+      }
+      p {
+        font-size: 0.8rem;
+        padding: 0 1rem;
+      }
+    }
+  }
+  #about {
+    .flex-container {
+      .row-1 {
+        .column-1 {
+          padding-top: 2rem;
+        }
+        .column-2 {
+          padding: 5rem 0 0 0;
+        }
+      }
+    }
+
+    h3 {
+      font-size: 2.2rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+
+    .text {
+      left: 10%;
+      padding: 0 1rem;
+    }
+  }
+
+  #marquee {
+    padding-top: 0;
+
+    .flex-container {
+      .row-2 {
+        .column-4 {
+          .text-h3 {
+            font-size: 3rem;
+            padding: 0 3rem;
+            text-align: center;
+          }
+        }
+
+        .column-5 {
+          display: none;
+        }
+      }
+    }
+  }
+
+  #video-row {
+    padding-top: 3rem;
+    .flex-container {
+      .row-3 {
+        flex-direction: column;
+
+        .column-6 {
+          video {
+            width: 100%;
+          }
+        }
+
+        .column-7 {
+          padding-top: 2rem;
+          width: 100%;
+
+          p {
+            font-size: 1.5rem;
+            padding: 0 2rem;
+          }
+
+          .text-h3-video {
+            padding: 1rem 2rem 0;
+            font-size: 3rem;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+  #projects {
+    padding-bottom: 5rem;
+    .row-4 {
+      .project {
+        &-title {
+          .text-overlay {
+            font-size: 2.3rem;
+            pointer-events: none;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .big-box {
+      justify-content: space-evenly;
+      width: 100vw;
+
+      h1 {
+        display: none;
+      }
+
+      .r2 {
+        padding-right: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+ul {
+  padding-left: 1rem;
+  list-style: none;
+}
+
+li {
+  flex-shrink: 0;
+  width: clamp(500px, 60vw, 800px);
+  padding-right: 1rem;
+}
+
+.demo-wrapper {
+  overflow-x: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    background: $background-color;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+    background: $background-color;
+  }
+}
+
+.wrapper-gal {
+  display: -webkit-box;
+  display: flex;
+}
+
+.demo-gallery:not(.last) {
+  padding-bottom: 1rem;
+}
+
+.demo-text .text {
+  font-size: clamp(8rem, 15vw, 16rem);
+  line-height: 1;
+  font-weight: 900;
+  color: $primary-color;
+}

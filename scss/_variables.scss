@@ -1,0 +1,28 @@
+$primary-color: #f95d9b;
+$secondary-color: rgb(80, 80, 80);
+$contrast-color: #8c489f;
+$background-color: #fff;
+
+.heading-1 {
+  font-size: 6rem;
+  color: $primary-color;
+}
+
+.heading-2 {
+  font-size: 5rem;
+  color: $primary-color;
+  font-weight: 500;
+}
+
+.heading-3 {
+  font-size: 3rem;
+  color: $contrast-color;
+  font-weight: 500;
+}
+
+.lead {
+  font-size: 2rem;
+  font-weight: 200;
+  color: $secondary-color;
+  line-height: 1.2;
+}

@@ -1,0 +1,44 @@
+@import 'variables';
+@import 'loader';
+@import 'header';
+@import 'about';
+@import 'gallery';
+@import 'footer';
+@import 'responsive';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+
+  .cursor-hover {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: scale(0.1);
+    opacity: 0;
+    margin: -100px 0 0 -100px;
+    background-size: cover;
+    z-index: 5;
+  }
+}
