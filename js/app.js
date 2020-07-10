@@ -12,11 +12,40 @@ paceOptions = {
 };
 
 Pace.on('done', function () {
+  const about = document.querySelector('.about-nav');
+  const services = document.querySelector('.services-nav');
+  const gallery = document.querySelector('.gallery-nav');
+  const contact = document.querySelector('.contact-nav');
   const arrowBtn = document.querySelector('.arrow-down');
   arrowBtn.addEventListener('click', () => {
     gsap.to(window, {
       duration: 1,
       scrollTo: { y: '#about' },
+    });
+  });
+
+  about.addEventListener('click', () => {
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: { y: '#about' },
+    });
+  });
+  services.addEventListener('click', () => {
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: { y: '#projects' },
+    });
+  });
+  gallery.addEventListener('click', () => {
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: { y: '.demo-text' },
+    });
+  });
+  contact.addEventListener('click', () => {
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: { y: '#contact-form' },
     });
   });
 

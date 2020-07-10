@@ -29,6 +29,40 @@
       z-index: -1;
     }
   }
+
+  .nav-bar {
+    width: 100%;
+    position: fixed;
+    z-index: 50;
+    .nav-container {
+      display: flex;
+      flex-direction: row;
+      width: 40vw;
+      height: 50px;
+      margin: auto;
+      justify-content: space-around;
+      align-items: center;
+      .insta {
+        z-index: 50;
+        cursor: pointer;
+
+        ion-icon {
+          color: $primary-color;
+        }
+      }
+
+      h3 {
+        color: $background-color;
+        font-weight: 300;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
 }
 
 .showcase {

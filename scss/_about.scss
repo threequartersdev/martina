@@ -29,6 +29,12 @@
         background-color: $background-color;
       }
 
+      p {
+        font-weight: 300;
+        padding-top: 1rem;
+        font-size: 1rem;
+      }
+
       .column-1 {
         align-self: flex-start;
         padding-top: 7rem;

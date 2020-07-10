@@ -37,6 +37,8 @@
       rel="stylesheet"
     />
 
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
     <!-- CSS Style -->
     <link rel="stylesheet" href="./css/main.css" />
 
@@ -55,6 +57,23 @@
             <source src="img/background.mp4" type="video/mp4" />
           </video>
         </div>
+
+        <nav class="nav-bar">
+          <div class="nav-container">
+            <div class="about-nav"><h3>About</h3></div>
+            <div class="services-nav"><h3>Services</h3></div>
+            <div class="insta">
+              <a
+                href="https://www.instagram.com/martina_fitpro/"
+                target="_blank"
+              >
+                <ion-icon name="logo-instagram" size="large"></ion-icon>
+              </a>
+            </div>
+            <div class="gallery-nav"><h3>Gallery</h3></div>
+            <div class="contact-nav"><h3>Contact</h3></div>
+          </div>
+        </nav>
 
         <!-- Showcase container -->
         <div class="showcase">
@@ -97,14 +116,27 @@
               <div class="img img-1 column column-1">
                 <img class="img-1-1" src="./img/image04.jpg" alt="Martina" />
                 <div class="box-1"></div>
+                <p>
+                  My goal is your success
+                </p>
               </div>
               <div class="img img-2 column column-2">
                 <img src="./img/image06.jpg" alt="Martina" />
                 <div class="box-1"></div>
+                <p>
+                  I focus on helping clients to improve their lifestyles,
+                  <br />
+                  by crafting healthy sustainable habits.
+                </p>
               </div>
               <div class="img-3 column column-3">
                 <img src="./img/image05.jpg" alt="Martina" />
                 <div class="box-1"></div>
+                <p>
+                  Best training for you
+                  <br />
+                  is a safe effective and enjoyable one.
+                </p>
               </div>
             </div>
           </div>
@@ -160,9 +192,8 @@
               </div>
               <div class="text column-7">
                 <p class="p-text-video">
-                  My goal is your success - I focus on helping people to improve
-                  their lifestyle feeling strong, confident and happy. Best
-                  training for you is a safe efffective and enjoyable one.
+                  Nutricion is key to weight loss and a healthy life so we will
+                  discuss your current eating habits.
                 </p>
                 <h3 class="heading-2 text-h3-video">
                   Passionate about fitness, strive to help you reach your goals
@@ -230,7 +261,7 @@
         <!-- Section: Gallery -->
         <section class="demo-text section">
           <div class="wrapper-gal text">
-            ABCDEFGHIJKLMNOPQRSTUVWXYZ
+            STRONG•HEALTHY•CONFIDENT
           </div>
         </section>
 
@@ -297,6 +328,39 @@
             </ul>
           </section>
         </div>
+
+        <section id="contact-form">
+          <div class="container-form">
+            <div class="contact-text-h5">
+              <h5>Contact me</h5>
+            </div>
+            <div class="contact-form">
+              <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                data-netlify-recaptcha="true"
+              >
+                <p>
+                  <label>Your Name: <input type="text" name="name" /></label>
+                </p>
+                <p>
+                  <label>Your Email: <input type="email" name="email" /></label>
+                </p>
+                <p>
+                  <label
+                    >Message:
+                    <textarea class="message-border" name="message"></textarea>
+                  </label>
+                </p>
+                <p>
+                  <button type="submit">Send</button>
+                </p>
+              </form>
+              <div class="captcha" data-netlify-recaptcha="true"></div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer>

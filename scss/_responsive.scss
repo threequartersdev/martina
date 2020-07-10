@@ -1,4 +1,12 @@
 @media screen and (max-width: 1024px) {
+  #home {
+    .nav-bar {
+      .nav-container {
+        width: 100vw;
+      }
+    }
+  }
+
   .showcase {
     .showcase-content {
       h1 {
@@ -47,9 +55,29 @@
       }
     }
   }
+
+  #contact-form {
+    .container-form {
+      width: 80vw;
+      margin: auto;
+      .contact-form {
+        width: 100%;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 430px) {
+  #home {
+    .nav-bar {
+      .nav-container {
+        h3 {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
   .wrapper {
     .cursor-hover {
       display: none;
@@ -75,6 +103,10 @@
         }
         .column-2 {
           padding: 5rem 0 0 0;
+        }
+
+        p {
+          font-size: 0.7rem;
         }
       }
     }

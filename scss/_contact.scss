@@ -1,0 +1,72 @@
+#contact-form {
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+  .container-form {
+    .contact-text-h5 {
+      margin: 0 auto;
+      color: $primary-color;
+      text-align: center;
+      font-size: 2rem;
+      h5 {
+        font-weight: 300;
+      }
+    }
+    .contact-form {
+      width: 800px;
+      margin: 0 auto;
+      padding-top: 2rem;
+      label {
+        display: block;
+        font-size: 1rem;
+        color: rgb(97, 97, 97);
+        font-weight: 300;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        resize: vertical;
+        background: transparent;
+        color: $secondary-color;
+        font-weight: 400;
+
+        &:focus {
+          outline: none !important;
+          border: none !important;
+        }
+      }
+
+      input,
+      .message-border {
+        border-bottom: 1px solid $primary-color;
+      }
+
+      p {
+        padding-top: 1rem;
+      }
+
+      button {
+        background: none;
+        border: 0.3pt solid $primary-color;
+        text-transform: uppercase !important;
+        font-size: 0.7rem !important;
+        letter-spacing: 2px;
+        padding: 0.7rem 3rem;
+        transition: all 0.4s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          background: $primary-color;
+          color: $background-color;
+          transition: all 0.4s ease-in-out;
+        }
+      }
+
+      .captcha {
+        padding-top: 1rem;
+      }
+    }
+  }
+}
